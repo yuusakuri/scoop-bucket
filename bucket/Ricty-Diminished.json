@@ -1,0 +1,38 @@
+{
+    "homepage": "https://github.com/edihbrandon/RictyDiminished",
+    "version": "3.2.3",
+    "url": "https://github.com/edihbrandon/RictyDiminished/archive/3.2.3.zip",
+    "hash": "",
+    "depends": "pswinglue",
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "$paths = Get-ChildItem -LiteralPath $dir -Recurse -File |",
+            "Where-Object Name -Match '\\.(otf|ttf)$' |",
+            "Select-Object -ExpandProperty FullName",
+            "if ($paths -match '\\.otf$') {",
+            "  $paths = $paths | Where-Object { $_ -match '\\.otf$' }",
+            "}",
+            "$paths | ForEach-Object {",
+            "  PSWinGlue\\Install-Font -Path $_ -Scope System -WarningAction SilentlyContinue -ErrorAction SilentlyContinue",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "$uninstallFontFileRegex = (Get-ChildItem -LiteralPath $dir -Recurse -File |",
+            "  Where-Object Name -Match '\\.(otf|ttf)$' |",
+            "  Select-Object -ExpandProperty BaseName) -join '|'",
+            "",
+            "Get-Fonts -WarningAction SilentlyContinue |",
+            "Where-Object { $_.File.Name -match $uninstallFontFileRegex } |",
+            "Select-Object -ExpandProperty Name |",
+            "ForEach-Object { PSWinGlue\\Uninstall-Font -Name $_ -Scope System }"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/edihbrandon/RictyDiminished/archive/$version.zip"
+    }
+}

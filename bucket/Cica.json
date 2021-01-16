@@ -1,0 +1,44 @@
+{
+    "homepage": "https://github.com/miiton/Cica",
+    "version": "5.0.2",
+    "url": "https://github.com/miiton/Cica/releases/download/v5.0.2/Cica_v5.0.2_with_emoji.zip",
+    "depends": "pswinglue",
+    "hash": "b5d2eaa5841f629ed8cfd239aa30f5a4b45aa1aa2ef9f4c2b3f715f3d59bb8de",
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "$paths = Get-ChildItem -LiteralPath $dir -Recurse -File |",
+            "Where-Object Name -Match '\\.(otf|ttf)$' |",
+            "Select-Object -ExpandProperty FullName",
+            "if ($paths -match '\\.otf$') {",
+            "  $paths = $paths | Where-Object { $_ -match '\\.otf$' }",
+            "}",
+            "$paths | ForEach-Object {",
+            "  PSWinGlue\\Install-Font -Path $_ -Scope System -WarningAction SilentlyContinue -ErrorAction SilentlyContinue",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "$uninstallFontFileRegex = (Get-ChildItem -LiteralPath $dir -Recurse -File |",
+            "  Where-Object Name -Match '\\.(otf|ttf)$' |",
+            "  Select-Object -ExpandProperty BaseName) -join '|'",
+            "",
+            "Get-Fonts -WarningAction SilentlyContinue |",
+            "Where-Object { $_.File.Name -match $uninstallFontFileRegex } |",
+            "Select-Object -ExpandProperty Name |",
+            "ForEach-Object { PSWinGlue\\Uninstall-Font -Name $_ -Scope System }"
+        ]
+    },
+    "bin": [
+        
+    ],
+    "shortcuts": [
+        
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/miiton/Cica/releases/download/v$version/Cica_v$version_with_emoji.zip"
+    }
+}

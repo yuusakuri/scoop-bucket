@@ -1,0 +1,33 @@
+{
+    "homepage": "https://github.com/fran-f/keypirinha-terminal-profiles",
+    "description": "keypirinha-plugin keypirinha-package",
+    "version": "1.7",
+    "url": "https://github.com/fran-f/keypirinha-terminal-profiles/releases/download/v1.7/Terminal-Profiles.keypirinha-package",
+    "hash": "300443069334dbe891dd426c8b439411954ecfbb43300d5d2c7b932ae28f6ac8",
+    "depends": [
+        "PSWinUtil",
+        "keypirinha"
+    ],
+    "installer": {
+        "script": [
+            "$packageName = '{0}.keypirinha-package' -f ($app -replace '^keypirinha-', '')",
+            "$packageDir = '{0}/../portable/Profile/Packages' -f (PSWinUtil\\Find-WUPath -Name 'keypirinha.exe' -Program -Strict)",
+            "Move-Item -LiteralPath ('{0}/{1}' -f $dir, $packageName) -Destination $packageDir"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$packageName = '{0}.keypirinha-package' -f ($app -replace '^keypirinha-', '')",
+            "$packageDir = '{0}/../portable/Profile/Packages' -f (PSWinUtil\\Find-WUPath -Name 'keypirinha.exe' -Program -Strict)",
+            "Remove-Item -LiteralPath ('{0}/{1}' -f $packageDir, $packageName)"
+        ]
+    },
+    "bin": "",
+    "shortcuts": [
+        
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/fran-f/keypirinha-terminal-profiles/releases/download/v$version/Terminal-Profiles.keypirinha-package"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "homepage": "https://freealarmclocksoftware.com/",
+    "description": "Free Alarm Clock",
+    "version": "4.0.1",
+    "url": "https://freealarmclocksoftware.com/FreeAlarmClockPortable.zip",
+    "hash": "",
+    "extract_dir": "FreeAlarmClockPortable",
+    "persist": [
+        "Data.ini",
+        "Sounds"
+    ],
+    "installer": [
+        "$programFileName = 'FreeAlarmClock.exe'",
+        "$programFilePath = Join-Path $dir $programFileName",
+        "PSWinUtil\\Register-WUStartup -LiteralPath $programFilePath -Valuename 'FreeAC' -Argument '-autorun' -Scope CurrentUser"
+    ],
+    "bin": "",
+    "shortcuts": [
+        [
+            "FreeAlarmClock.exe",
+            "FreeAlarmClock"
+        ]
+    ],
+    "checkver": {
+        "url": "https://freealarmclocksoftware.com/",
+        "regex": "<span .+>Version:</span> ([\\d.]+)"
+    }
+}

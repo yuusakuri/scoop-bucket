@@ -1,0 +1,27 @@
+{
+    "homepage": "https://pc.qq.com/detail/6/detail_56606.html",
+    "description": "百度网盘 百度云管家 BaiduNetDisk BaiduYunGuanjia",
+    "version": "7.0.6.11",
+    "url": "https://dl.softmgr.qq.com/original/net_app/BaiduNetdisk_7.0.6.11.exe#/dl.7z",
+    "hash": "c194fb634519faf96383da48942eee83b32b9ef6cfa61e4c03ea3fe5ed010bb9",
+    "depends": "pswinutil",
+    "installer": {
+        "script": [
+            "PSWinUtil\\Register-WUStartup -LiteralPath (Join-Path $dir 'YunDetectService.exe') -Valuename 'BaiduYunDetect' -Scope CurrentUser",
+            "PSWinUtil\\Register-WUStartup -LiteralPath (Join-Path $dir 'BaiduNetdisk.exe') -Argument 'AutoRun' -Valuename 'BaiduYunGuanjia' -Scope CurrentUser"
+        ]
+    },
+    "shortcuts": [
+        [
+            "BaiduNetdisk.exe",
+            "BaiduNetDisk"
+        ]
+    ],
+    "checkver": {
+        "url": "http://xiazai.sogou.com/detail/34/9/-1433550905860313072.html",
+        "regex": "info_version.+\\>([\\d.]+\\d+)\\<"
+    },
+    "autoupdate": {
+        "url": "https://dl.softmgr.qq.com/original/net_app/BaiduNetdisk_$version.exe#/dl.7z"
+    }
+}

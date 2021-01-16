@@ -1,0 +1,18 @@
+{
+    "homepage": "https://www.wintools.info/index.php/system-font-bold",
+    "description": "",
+    "version": "1.0.0.1",
+    "url": "https://www.wintools.info/Download/sysfontbold.exe",
+    "hash": "",
+    "bin": "sysfontbold.exe",
+    "shortcuts": [
+        [
+            "sysfontbold.exe",
+            "sysfontbold"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.wintools.info/index.php/system-font-bold",
+        "regex": "Version:\\s([\\d.]+\\d+)"
+    }
+}

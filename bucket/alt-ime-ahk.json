@@ -1,0 +1,26 @@
+{
+    "homepage": "https://github.com/karakaram/alt-ime-ahk",
+    "description": "左右 Alt キーの空打ちで IME を OFF/ON する AutoHotKey スクリプトです。",
+    "version": "0.4.4",
+    "url": "https://github.com/karakaram/alt-ime-ahk/releases/download/v0.4.4/alt-ime-ahk.zip",
+    "hash": "e48b5762aba641e929519dc00a2cfb978923650e9829973c56984a789429cdf8",
+    "depends": "pswinutil",
+    "installer": {
+        "script": [
+            "$programFileName = 'alt-ime-ahk.exe'",
+            "$programFilePath = Join-Path $dir $programFileName",
+            "PSWinUtil\\Register-WUStartup -LiteralPath $programFilePath -Scope CurrentUser"
+        ]
+    },
+    "bin": "alt-ime-ahk.exe",
+    "shortcuts": [
+        [
+            "alt-ime-ahk.exe",
+            "alt-ime-ahk"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/karakaram/alt-ime-ahk/releases/download/v$version/alt-ime-ahk.zip"
+    }
+}

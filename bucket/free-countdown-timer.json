@@ -1,0 +1,23 @@
+{
+    "homepage": "https://free-countdown-timer.com/",
+    "description": "Free Countdown Timer",
+    "version": "4.0.1",
+    "url": "https://free-countdown-timer.com/FreeCountdownTimerPortable.zip",
+    "hash": "",
+    "extract_dir": "FreeCountdownTimerPortable",
+    "persist": [
+        "Data.ini",
+        "Sounds"
+    ],
+    "bin": "",
+    "shortcuts": [
+        [
+            "FreeCountdownTimer.exe",
+            "FreeCountdownTimer"
+        ]
+    ],
+    "checkver": {
+        "url": "https://free-countdown-timer.com/",
+        "regex": "<span .+>Version:</span> ([\\d.]+)"
+    }
+}

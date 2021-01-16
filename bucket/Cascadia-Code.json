@@ -1,0 +1,39 @@
+{
+    "version": "2009.22",
+    "license": "OFL-1.1",
+    "homepage": "https://github.com/microsoft/cascadia-code",
+    "url": "https://github.com/microsoft/cascadia-code/releases/download/v2009.22/CascadiaCode-2009.22.zip",
+    "hash": "801bcc94b79ae46bc573c9c07feb44d581e12d15f79b176be165f00f8fdf9846",
+    "depends": "pswinglue",
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "$paths = Get-ChildItem -LiteralPath $dir -Recurse -File |",
+            "Where-Object Name -Match '\\.(otf|ttf)$' |",
+            "Select-Object -ExpandProperty FullName",
+            "if ($paths -match '\\.otf$') {",
+            "  $paths = $paths | Where-Object { $_ -match '\\.otf$' }",
+            "}",
+            "$paths | ForEach-Object {",
+            "  PSWinGlue\\Install-Font -Path $_ -Scope System -WarningAction SilentlyContinue -ErrorAction SilentlyContinue",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "$uninstallFontFileRegex = (Get-ChildItem -LiteralPath $dir -Recurse -File |",
+            "  Where-Object Name -Match '\\.(otf|ttf)$' |",
+            "  Select-Object -ExpandProperty BaseName) -join '|'",
+            "",
+            "Get-Fonts -WarningAction SilentlyContinue |",
+            "Where-Object { $_.File.Name -match $uninstallFontFileRegex } |",
+            "Select-Object -ExpandProperty Name |",
+            "ForEach-Object { PSWinGlue\\Uninstall-Font -Name $_ -Scope System }"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaCode-$version.zip"
+    }
+}
