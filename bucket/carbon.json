@@ -11,6 +11,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/webmd-health-services/Carbon/releases/download/$version/Carbon.zip"
+        "url": "https://github.com/webmd-health-services/Carbon/releases/download/$version/Carbon-$version.zip"
     }
 }
