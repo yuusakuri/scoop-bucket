@@ -17,6 +17,10 @@
             "BaiduNetDisk"
         ]
     ],
+    "persist": [
+      "users",
+      "AppSettingApp.dat"
+    ],
     "checkver": {
         "url": "http://xiazai.sogou.com/detail/34/9/-1433550905860313072.html",
         "regex": "info_version.+\\>([\\d.]+\\d+)\\<"
