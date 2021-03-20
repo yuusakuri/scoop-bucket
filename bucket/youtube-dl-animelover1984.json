@@ -1,0 +1,15 @@
+{
+    "homepage": "https://github.com/animelover1984/youtube-dl",
+    "description": "Niconico-based fork of youtube-dl.",
+    "version": "2020.08.24m",
+    "url": "https://github.com/animelover1984/youtube-dl/releases/download/2020.08.24m/youtube-dl_2020.08.24m_x64.7z",
+    "hash": "",
+    "installer": {
+        "script": "Rename-Item -LiteralPath \"$dir\\youtube-dl.exe\" -NewName \"youtube-dl-animelover1984.exe\""
+    },
+    "bin": "youtube-dl-animelover1984.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/animelover1984/youtube-dl/releases/download/$version/youtube-dl_$version_x64.7z"
+    }
+}
