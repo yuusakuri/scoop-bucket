@@ -1,9 +1,9 @@
 {
-    "version": "2102.03",
+    "version": "2105.24",
     "license": "OFL-1.1",
     "homepage": "https://github.com/microsoft/cascadia-code",
-    "url": "https://github.com/microsoft/cascadia-code/releases/download/v2102.03/CascadiaCode-2102.03.zip",
-    "hash": "6c96e5ffab9dbe0802a232bf5cb3c8538ee22a10e70c7897a3b3924a4b1b2e36",
+    "url": "https://github.com/microsoft/cascadia-code/releases/download/v2105.24/CascadiaCode-2105.24.zip",
+    "hash": "4edd89afd1009e1da121792c44bec6192001f3ffe2186a9e6f554c3bb8f5fb0b",
     "depends": "pswinglue",
     "installer": {
         "script": [
