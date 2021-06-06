@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/webmd-health-services/Carbon",
     "description": "Carbon is a PowerShell module for automating the configuration of computers running Windows 7, 8, 2008, and 2012.",
-    "version": "2.9.4",
+    "version": "2.10.2",
     "license": "",
-    "url": "https://github.com/webmd-health-services/Carbon/releases/download/2.9.4/Carbon-2.9.4.zip",
-    "hash": "fb38294440f98105326138ab968fd75d28bb9823dafd3d758c231e08153025a0",
+    "url": "https://github.com/webmd-health-services/Carbon/releases/download/2.10.2/Carbon-2.10.2.zip",
+    "hash": "01941deec2ed2dc2de9ad12dca5e97bbefdf26fb5ab3c5ff00ded2a94bf18e4f",
     "extract_dir": "Carbon",
     "psmodule": {
         "name": "Carbon"
