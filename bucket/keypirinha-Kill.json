@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/ueffel/Keypirinha-Plugin-Kill",
     "description": "keypirinha-plugin keypirinha-package",
-    "version": "2.8",
-    "url": "https://github.com/ueffel/Keypirinha-Plugin-Kill/releases/download/2.8/Kill.keypirinha-package",
-    "hash": "",
+    "version": "2.8.1",
+    "url": "https://github.com/ueffel/Keypirinha-Plugin-Kill/releases/download/2.8.1/Kill.keypirinha-package",
+    "hash": "50e4d608f2367f152b24ba5de438423375cee2b6478e085a4142e47180cf0c5e",
     "depends": [
         "PSWinUtil",
         "keypirinha"
