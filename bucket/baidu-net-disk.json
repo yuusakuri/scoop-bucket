@@ -1,9 +1,9 @@
 {
     "homepage": "https://pc.qq.com/detail/6/detail_56606.html",
     "description": "百度网盘 百度云管家 BaiduNetDisk BaiduYunGuanjia",
-    "version": "7.1.1.2",
-    "url": "https://dl.softmgr.qq.com/original/net_app/BaiduNetdisk_7.1.1.2.exe#/dl.7z",
-    "hash": "961fdebe3279fe88369ccc5e3d9270831f47845129f9b9295374003e9a18e5d4",
+    "version": "7.3.2.11",
+    "url": "https://dl.softmgr.qq.com/original/net_app/BaiduNetdisk_7.3.2.11.exe#/dl.7z",
+    "hash": "9e41e25bea6f3f69791848cc1955dfcfd406a2d9b65419e71f6ef5c9b4d23cdc",
     "depends": "pswinutil",
     "installer": {
         "script": [
