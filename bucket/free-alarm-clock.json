@@ -1,9 +1,10 @@
 {
-    "homepage": "https://freealarmclocksoftware.com/",
+    "homepage": "https://freealarmapp.com/",
     "description": "Free Alarm Clock",
-    "version": "4.0.1",
-    "url": "https://freealarmclocksoftware.com/FreeAlarmClockPortable.zip",
+    "version": "latest",
+    "url": "https://freealarmapp.com/FreeAlarmClockPortable.zip",
     "hash": "",
+    "depends": "pswinutil",
     "extract_dir": "FreeAlarmClockPortable",
     "persist": [
         "Data.ini",
@@ -20,9 +21,5 @@
             "FreeAlarmClock.exe",
             "FreeAlarmClock"
         ]
-    ],
-    "checkver": {
-        "url": "https://freealarmclocksoftware.com/",
-        "regex": "<span .+>Version:</span> ([\\d.]+)"
-    }
+    ]
 }
