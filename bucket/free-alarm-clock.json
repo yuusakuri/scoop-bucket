@@ -4,6 +4,7 @@
     "version": "latest",
     "url": "https://freealarmapp.com/FreeAlarmClockPortable.zip",
     "hash": "",
+    "depends": "pswinutil",
     "extract_dir": "FreeAlarmClockPortable",
     "persist": [
         "Data.ini",
