@@ -34,11 +34,11 @@
         "bin\\mp42ts.exe"
     ],
     "checkver": {
-        "url": "https://developer.nvidia.com/rdp/cudnn-archive",
-        "regex": "<td><a\\ href=\"http://zebulon\\.bok\\.net/Bento4/binaries/Bento4-SDK-(\\d+-\\d+-\\d+-\\d+\\).x86_64-microsoft-win32\\.zip\">Binaries\\ for\\ Windows\\ 10</a></td>"
+        "url": "https://www.bento4.com/downloads/",
+        "regex": "<p><i>Version (\\d+\\.\\d+\\.\\d+-\\d+)</i></p>"
     },
     "autoupdate": {
-          "url": "http://zebulon.bok.net/Bento4/binaries/Bento4-SDK-$version.x86_64-microsoft-win32.zip",
-          "extract_dir": "Bento4-SDK-$version.x86_64-microsoft-win32"
+          "url": "http://zebulon.bok.net/Bento4/binaries/Bento4-SDK-$dashVersion.x86_64-microsoft-win32.zip",
+          "extract_dir": "Bento4-SDK-$dashVersion.x86_64-microsoft-win32"
     }
 }
