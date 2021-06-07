@@ -1,13 +1,19 @@
 {
-    "homepage": "https://free-countdown-timer.com/",
+    "homepage": "https://free-countdown.com/",
     "description": "Free Countdown Timer",
-    "version": "4.0.1",
-    "url": "https://free-countdown-timer.com/FreeCountdownTimerPortable.zip",
+    "version": "latest",
+    "url": "https://free-countdown.com/FreeCountdownTimerPortable.zip",
     "hash": "",
+    "depends": "pswinutil",
     "extract_dir": "FreeCountdownTimerPortable",
     "persist": [
         "Data.ini",
         "Sounds"
+    ],
+    "installer": [
+        "$programFileName = 'FreeCountdownTimer.exe'",
+        "$programFilePath = Join-Path $dir $programFileName",
+        "PSWinUtil\\Register-WUStartup -LiteralPath $programFilePath -Valuename 'FreeCT' -Argument '-autorun' -Scope CurrentUser"
     ],
     "bin": "",
     "shortcuts": [
@@ -15,9 +21,5 @@
             "FreeCountdownTimer.exe",
             "FreeCountdownTimer"
         ]
-    ],
-    "checkver": {
-        "url": "https://free-countdown-timer.com/",
-        "regex": "<span .+>Version:</span> ([\\d.]+)"
-    }
+    ]
 }
