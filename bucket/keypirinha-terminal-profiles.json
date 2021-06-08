@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/fran-f/keypirinha-terminal-profiles",
     "description": "keypirinha-plugin keypirinha-package",
-    "version": "1.7",
-    "url": "https://github.com/fran-f/keypirinha-terminal-profiles/releases/download/v1.7/Terminal-Profiles.keypirinha-package",
-    "hash": "300443069334dbe891dd426c8b439411954ecfbb43300d5d2c7b932ae28f6ac8",
+    "version": "1.8",
+    "url": "https://github.com/fran-f/keypirinha-terminal-profiles/releases/download/v1.8/Terminal-Profiles.keypirinha-package",
+    "hash": "e35abbc1dead4a6cb696e57dd64f001684e649b12c6521efad92de781a8cf023",
     "depends": [
         "PSWinUtil",
         "keypirinha"
