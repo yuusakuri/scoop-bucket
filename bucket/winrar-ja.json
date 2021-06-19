@@ -1,0 +1,47 @@
+{
+    "version": "6.01",
+    "description": "Powerful archive manager",
+    "homepage": "https://www.rarlab.com/download.htm",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://www.win-rar.com/gtb_priv.html?&L=0"
+    },
+    "notes": "Set up context menu within settings window.",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.rarlab.com/rar/winrar-x64-601jp.exe#/dl.7z",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "https://www.rarlab.com/rar/wrar601jp.exe#/dl.7z",
+            "hash": ""
+        }
+    },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\rarreg.key\")) { New-Item \"$dir\\rarreg.key\" | Out-Null }",
+    "bin": [
+        "Rar.exe",
+        "UnRAR.exe",
+        "WinRAR.exe"
+    ],
+    "shortcuts": [
+        [
+            "WinRAR.exe",
+            "WinRAR-Ja"
+        ]
+    ],
+    "persist": "rarreg.key",
+    "checkver": {
+      "url": "https://www.rarlab.com/download.htm",
+      "regex": "<b>Japanese \\(64 bit\\)</b></a></td>\\s+<td align=\"center\">([\\d.]+\\d+)</td>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.rarlab.com/rar/winrar-x64-$cleanVersionjp.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://www.rarlab.com/rar/wrar$cleanVersionjp.exe#/dl.7z"
+            }
+        }
+    }
+}
