@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/yuusakuri/PSWinUtil",
     "description": "PSWinUtil is a PowerShell module for Windows users.",
-    "version": "1.5.7",
+    "version": "1.5.8",
     "license": "",
-    "url": "https://github.com/yuusakuri/PSWinUtil/archive/v1.5.7.zip",
-    "hash": "79cf097bce399f5548c3a5340eea62414f706c40e61080b4739e219b18c46218",
-    "extract_dir": "PSWinUtil-1.5.7",
+    "url": "https://github.com/yuusakuri/PSWinUtil/archive/v1.5.8.zip",
+    "hash": "b6bf56ad1892ac73e176bf61ceb729264ea8ef444eec246ce6c46232232e0871",
+    "extract_dir": "PSWinUtil-1.5.8",
     "psmodule": {
         "name": "PSWinUtil"
     },
