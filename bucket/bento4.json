@@ -35,7 +35,7 @@
     ],
     "checkver": {
         "url": "https://www.bento4.com/downloads/",
-        "regex": "<p><i>Version (\\d+\\.\\d+\\.\\d+-\\d+)</i></p>"
+        "regex": "Version (\\d+\\.\\d+\\.\\d+-\\d+)"
     },
     "autoupdate": {
           "url": "http://zebulon.bok.net/Bento4/binaries/Bento4-SDK-$dashVersion.x86_64-microsoft-win32.zip",
