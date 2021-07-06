@@ -1,0 +1,18 @@
+{
+    "homepage": "https://github.com/jmalarcon/DotNetVersions",
+    "description": "DotNetVersions",
+    "version": "1.0.0",
+    "url": "https://github.com/jmalarcon/DotNetVersions/releases/download/v1.0.0/DotNetVersions.zip",
+    "hash": "",
+    "bin": "DotNetVersions.exe",
+    "shortcuts": [
+        [
+            "DotNetVersions.exe",
+            "DotNetVersions"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/jmalarcon/DotNetVersions/releases/download/v$version/DotNetVersions.zip"
+    }
+}
