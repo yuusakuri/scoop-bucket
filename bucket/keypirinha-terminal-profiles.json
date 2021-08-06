@@ -1,13 +1,13 @@
 {
-    "homepage": "https://github.com/fran-f/keypirinha-terminal-profiles",
-    "description": "keypirinha-plugin keypirinha-package",
     "version": "1.8",
-    "url": "https://github.com/fran-f/keypirinha-terminal-profiles/releases/download/v1.8/Terminal-Profiles.keypirinha-package",
-    "hash": "e35abbc1dead4a6cb696e57dd64f001684e649b12c6521efad92de781a8cf023",
+    "description": "keypirinha-plugin keypirinha-package",
+    "homepage": "https://github.com/fran-f/keypirinha-terminal-profiles",
     "depends": [
         "PSWinUtil",
         "keypirinha"
     ],
+    "url": "https://github.com/fran-f/keypirinha-terminal-profiles/releases/download/v1.8/Terminal-Profiles.keypirinha-package",
+    "hash": "e35abbc1dead4a6cb696e57dd64f001684e649b12c6521efad92de781a8cf023",
     "installer": {
         "script": [
             "$packageName = '{0}.keypirinha-package' -f ($app -replace '^keypirinha-', '')",

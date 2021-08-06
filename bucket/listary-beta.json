@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.listary.com/beta",
-    "description": "This is the first beta of Listary 6. It is completely rewritten from scratch and takes much longer than expected, but it’s well worth the wait.",
     "version": "6-beta",
+    "description": "This is the first beta of Listary 6. It is completely rewritten from scratch and takes much longer than expected, but it’s well worth the wait.",
+    "homepage": "https://www.listary.com/beta",
     "url": "https://www.listary.com/download/beta/listary6/ListaryInstaller.exe",
     "hash": "",
     "installer": {

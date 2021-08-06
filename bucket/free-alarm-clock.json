@@ -1,10 +1,10 @@
 {
-    "homepage": "https://freealarmapp.com/",
-    "description": "Free Alarm Clock",
     "version": "latest",
+    "description": "Free Alarm Clock",
+    "homepage": "https://freealarmapp.com/",
+    "depends": "pswinutil",
     "url": "https://freealarmapp.com/FreeAlarmClockPortable.zip",
     "hash": "",
-    "depends": "pswinutil",
     "extract_dir": "FreeAlarmClockPortable",
     "persist": [
         "Data.ini",

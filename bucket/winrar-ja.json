@@ -30,10 +30,7 @@
         ]
     ],
     "persist": "rarreg.key",
-    "checkver": {
-        "url": "https://www.rarlab.com/download.htm",
-        "regex": "<b>Japanese \\(64 bit\\)</b></a></td>\\s+<td align=\"center\">([\\d.]+\\d+)</td>"
-    },
+    "checkver": "<b>Japanese \\(64 bit\\)</b></a></td>\\s+<td align=\"center\">([\\d.]+\\d+)</td>",
     "autoupdate": {
         "architecture": {
             "64bit": {

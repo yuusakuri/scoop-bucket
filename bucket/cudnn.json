@@ -1,7 +1,11 @@
 {
-    "homepage": "https://developer.nvidia.com/rdp/cudnn-download",
-    "description": "NVIDIA CUDA Deep Neural Network (cuDNN) is a GPU-accelerated library of primitives for deep neural networks.",
     "version": "8.2.1.32",
+    "description": "NVIDIA CUDA Deep Neural Network (cuDNN) is a GPU-accelerated library of primitives for deep neural networks.",
+    "homepage": "https://developer.nvidia.com/rdp/cudnn-download",
+    "depends": [
+        "cuda",
+        "sudo"
+    ],
     "architecture": {
         "64bit": {
             "url": "http://developer.download.nvidia.com/compute/redist/cudnn/v8.2.1/cudnn-10.2-windows10-x64-v8.2.1.32.zip",
@@ -9,10 +13,6 @@
         }
     },
     "extract_dir": "cuda",
-    "depends": [
-        "cuda",
-        "sudo"
-    ],
     "installer": {
         "script": [
             "if (!$env:CUDA_PATH) {",

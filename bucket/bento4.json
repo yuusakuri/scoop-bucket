@@ -1,7 +1,7 @@
 {
-    "homepage": "https://developer.nvidia.com/rdp/cudnn-download",
-    "description": "A fast, modern, open source C++ toolkit for all your MP4 and MPEG DASH media format needs",
     "version": "1.6.0-639",
+    "description": "A fast, modern, open source C++ toolkit for all your MP4 and MPEG DASH media format needs",
+    "homepage": "https://developer.nvidia.com/rdp/cudnn-download",
     "url": "http://zebulon.bok.net/Bento4/binaries/Bento4-SDK-1-6-0-639.x86_64-microsoft-win32.zip",
     "hash": "e1d23dd74eaf5060c6595c9ada1456a0328cf441c0295446f1b3b52349909683",
     "extract_dir": "Bento4-SDK-1-6-0-639.x86_64-microsoft-win32",

@@ -1,7 +1,7 @@
 {
-    "homepage": "https://freesoft-100.com/review/massigra.php",
-    "description": "マウスホイールの回転で画像を次々と切り替えて表示できるシンプルな一画面・画像ビューア",
     "version": "0.45",
+    "description": "マウスホイールの回転で画像を次々と切り替えて表示できるシンプルな一画面・画像ビューア",
+    "homepage": "https://freesoft-100.com/review/massigra.php",
     "url": "https://dl.freesoft-100.com/p/MassiGra045.zip",
     "hash": "",
     "depends": "",
