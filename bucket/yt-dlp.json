@@ -1,9 +1,9 @@
 {
-    "version": "2022.04.08",
+    "version": "2022.05.18",
     "description": "This is a youtube-dl fork based on the now inactive youtube-dlc.",
     "homepage": "https://github.com/yt-dlp/yt-dlp",
-    "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2022.04.08/yt-dlp.exe",
-    "hash": "f855977df69a33c10934f9013dc946f516113a53880b218ec7f6abf1dd6e74cc",
+    "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2022.05.18/yt-dlp.exe",
+    "hash": "3eeeb1f2e2f3f2fe9111783887ea2569308df6ed6795c9ca5dd43d03eb337d06",
     "bin": "yt-dlp.exe",
     "checkver": "github",
     "autoupdate": {
